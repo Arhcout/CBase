@@ -1,0 +1,3 @@
+# CBase
+CBase is my little library with my own implementation of data structures
+like arrays, queues, logs, vec math, etc...
