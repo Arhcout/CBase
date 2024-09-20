@@ -1,6 +1,8 @@
 CC=gcc
 AR=ar
 
+OUTDIR=.
+
 SRC=$(shell find . -name "*.c")
 OBJ=$(SRC:%=%.o)
 
@@ -9,7 +11,7 @@ OPTIONS=
 FLAGS=-g -Wall $(OPTIONS)
 CFLAGS=$(FLAGS)
 
-LIB=libcbase.a
+LIB=$(OUTPUT)/libcbase.a
 
 .PHONY: lib clean
 
