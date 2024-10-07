@@ -1,7 +1,7 @@
 CC=gcc
 AR=ar
 
-OUTDIR=.
+override OUTDIR=$(shell,echo $$OUTDIR)
 
 SRC=$(shell find . -name "*.c")
 OBJ=$(SRC:%=%.o)
@@ -11,7 +11,7 @@ OPTIONS=
 FLAGS=-g -Wall $(OPTIONS)
 CFLAGS=$(FLAGS)
 
-LIB=$(OUTPUT)/libcbase.a
+LIB=../libcbase.a
 
 .PHONY: lib clean
 
