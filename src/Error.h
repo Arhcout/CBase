@@ -30,8 +30,8 @@
 
 #define MALLOC_CHECK(val, failReturnValue)                                     \
   if (!(val)) {                                                                \
-    ERROR("Out memory (malloc)\n");                                            \
-    return (failReturnValue);                                                  \
+    ERROR("Out memory (malloc)");                                              \
+    return failReturnValue;                                                    \
   }
 
 #define ASSERT(condition, errmsg, ...)                                         \

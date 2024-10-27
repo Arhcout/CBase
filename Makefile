@@ -1,10 +1,16 @@
+<<<<<<< HEAD
 include ../../Makefile.in
+=======
+CC=gcc
+AR=ar
+>>>>>>> 0016369 (Updated CBase)
 PREFIX=../../
 
 override OUTDIR=$(shell,echo $$OUTDIR)
 
 SRC=$(shell find . -name "*.c")
 OBJ=$(SRC:%=%.o)
+HDRS=$(shell find . -name "*.h")
 
 HDRS=$(shell find . -name "*.h")
 
